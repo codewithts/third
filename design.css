@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.work{
+     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(33, 33, 33, 0.571)), url(/mine/webpages/IMG-20200621-WA0010.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    /* background-color: black; */
+}
+.heading h1{
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    border:2px solid black;
+    border-radius: 5px;
+    background-color: rgba(122, 250, 229, 0.395);
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    padding: 10px;
+    margin: auto;
+}
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    margin: auto;
+    cursor:pointer;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(229, 240, 2);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Georgia,  Times, serif;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff0a0a;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+aside.left{
+    display: inline-flex;
+    /* padding: inherit; */
+    padding-top: 45px;
+    margin: auto;
+}
+.left img{
+    height: 250px;
+    width: 180px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 12px;
+}
+aside h3{
+    color: #06d1f4;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading h1{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .heading h1{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 390px){
+  .heading h1{
+    font-size: 20px;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* padding: 10px; */
+    margin: auto;
+    text-align: center;
+    line-height: 3;
+    /* flex-direction: column; */
+    /* font-size: 2px; */
+}  
+.navbar ul li a{
+    font-size: 15px;
+}
+aside.left {
+    display: flex;
+    flex-direction: column;
+    /* padding: inherit; */
+    /* padding-top: 45px; */
+    margin: auto;
+    padding: 5px;
+}
+.left img {
+    height: 420px;
+    width: 100%;}
+
+}
